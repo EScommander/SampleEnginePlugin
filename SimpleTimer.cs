@@ -19,7 +19,7 @@ public class SimpleTimer : MonoBehaviour {
 
 	private void Update () {
 		if (this._isRunning) {
-			this._timer += Time.deltaTime;
+			this._timer += Time.deltaTime * 2.0f;
 			this._timerText.text = this._timer.ToString();
 		}
 	}
